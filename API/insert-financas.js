@@ -1,0 +1,20 @@
+const { connection } = require("./database-config");
+
+function insertFinancas(req, res) {
+    const { IDUsuario, DescricaoDespesa, ValorDespesa, IDTipoDespesa, Mes, Ano } = req.body.data[0];
+    console.log(req.body.data[0]);
+      
+    const query = `INSERT INTO Financas (IDUsuario, DescricaoDespesa, ValorDespesa, IDTipoDespesa, Mes, Ano)
+        VALUES (?, ?, ?, ?, ?, ?);`;
+
+    connection.query(query, [IDUsuario, DescricaoDespesa, ValorDespesa, IDTipoDespesa, Mes, Ano], (err, result) => {
+        if (err) {
+            res.status(500).json({ error: err.message });
+        } else {
+            res.status(200).json({ message: "Dados inseridos com sucesso." });
+        }
+    });
+}
+
+
+module.exports = { insertFinancas }

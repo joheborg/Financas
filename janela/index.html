@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <title>Finanças Organizadas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand">FINANÇAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="row text-center">
+        <div class="col-sm-3 text-center">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="Digite o valor bruto de sua renda."
+                    aria-label="Digite o valor bruto de sua renda." aria-describedby="button-addon2" id="valorbruto">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    onclick="calcularINSS();">SALVAR</button>
+            </div>
+        </div>
+        <div class="col-sm-3 text-center">
+            <div>
+                <input type="text" class="form-control" placeholder="Aqui ficará o valor liquido com desconto de INSS."
+                    aria-label="Aqui ficará o valor liquido com desconto de INSS." id="valorliquido" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="Digite o valor de auxilio alimentação / refeição."
+                    aria-label="Digite o valor bruto de sua renda." aria-describedby="button-addon2">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="Digite o valor de auxilio gasolina / outros."
+                    aria-label="Digite o valor bruto de sua renda." aria-describedby="button-addon2">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class=" row col-md-6">
+            <div class="col-md-4">
+                <div>
+                    <input type="text" class="form-control" placeholder="Titulo despesas." aria-label="Titulo despesas."
+                        id="tituloNovaDespesa">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <input type="text" class="form-control" placeholder="Valor." aria-label="Valor."
+                        id="valorNovaDespesa">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select" id="selectTipoDespesas">
+                    <option selected disabled>Tipo de Gastos</option>
+                    <option value="Gastos necessários">Gastos necessários</option>
+                    <option value="Gastos não essenciais">Gastos não essenciais</option>
+                    <option value="Investimento">Investimento</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary">
+                    <i class="fas fa-plus"></i>   SALVAR
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="AQUI VAI O GRAFICO"
+                    aria-describedby="button-addon2">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group mb-3 mx-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">DESPESAS</th>
+                            <th scope="col">VALOR</th>
+                            <th scope="col">TIPO</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    function calcularINSS() {
+        let valorBruto = $('#valorbruto').val();
+        valorBruto.replaceAll('.', '').replaceAll(',', '.');
+        if (valorBruto <= 1320) {
+            let valorDesconto = 7.63;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+        if (valorBruto <= 2571.29) {
+            let valorDesconto = 9;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+        if (valorBruto <= 3856.94) {
+            let valorDesconto = 12;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+        if (valorBruto <= 7507.29) {
+            let valorDesconto = 14;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+
+    }
+
+</script>
+
+</html>
