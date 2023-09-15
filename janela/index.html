@@ -57,21 +57,21 @@
     <div class="row">
         <div class="col-md-6">
         </div>
-        <div class=" row col-md-6">
+        <div class=" row col-md-6 ">
             <div class="col-md-4">
                 <div>
-                    <input type="text" class="form-control" placeholder="Titulo despesas." aria-label="Titulo despesas."
-                        id="tituloNovaDespesa">
+                    <input type="text" class="form-control telaDespesas" placeholder="Titulo despesas."
+                        aria-label="Titulo despesas." id="tituloNovaDespesa">
                 </div>
             </div>
             <div class="col-md-2">
                 <div>
-                    <input type="text" class="form-control" placeholder="Valor." aria-label="Valor."
+                    <input type="text" class="form-control telaDespesas" placeholder="Valor." aria-label="Valor."
                         id="valorNovaDespesa">
                 </div>
             </div>
             <div class="col-md-4">
-                <select class="form-select" id="selectTipoDespesas">
+                <select class="form-select telaDespesas" id="selectTipoDespesas">
                     <option selected disabled>Tipo de Gastos</option>
                     <option value="Gastos necessários">Gastos necessários</option>
                     <option value="Gastos não essenciais">Gastos não essenciais</option>
@@ -79,11 +79,11 @@
                 </select>
             </div>
             <div class="col-md-2">
-                <button type="button" class="btn btn-secondary">
-                    <i class="fas fa-plus"></i>   SALVAR
+                <button type="button" class="btn btn-secondary" onclick="salvarDespesa();">
+                    <i class="fas fa-plus"></i> SALVAR
                 </button>
             </div>
-            
+
         </div>
     </div>
     <div class="row mt-5">
@@ -103,6 +103,8 @@
                             <th scope="col">TIPO</th>
                         </tr>
                     </thead>
+                    <tbody id="tabela-despesas">
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -140,6 +142,76 @@
         }
 
     }
+
+    function salvarDespesa() {
+        let descricaoDespesa = $('#tituloNovaDespesa').val();
+        let valorDespesa = $('#valorNovaDespesa').val();
+        let tipoDespesa = $('#selectTipoDespesas').val();
+
+        if (descricaoDespesa !== "" && valorDespesa !== "" && tipoDespesa !== "") {
+            let dataToSend = {
+                "IDUsuario": 1,
+                "DescricaoDespesa": descricaoDespesa,
+                "ValorDespesa": valorDespesa.replaceAll('.', '').replaceAll(',', '.'),
+                "IDTipoDespesa": 'Gastos necessários',
+                "Mes": 8,
+                "Ano": 2023
+            };
+
+            $.ajax({
+                method: "POST",
+                url: "http://localhost:81/inserir-financas",
+                data: JSON.stringify(dataToSend),
+                contentType: "application/json",
+
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            })
+                .done(function (ret) {
+                    if (ret["data"]["ID"] > 0) {
+                        alert("Dados salvos com sucesso.");
+                        $('.telaDespesas').val("");
+                        selectDespesa();
+                    }
+                })
+        }
+    }
+
+    function selectDespesa() {
+        let dataToSend = {
+            "IDUsuario": 1,
+            "Mes": 8,
+            "Ano": 2023
+        };
+
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:81/select-financas",
+            data: JSON.stringify(dataToSend),
+            contentType: "application/json",
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        })
+            .done(function (ret) {
+                console.log(ret);
+                const tabelaDespesas = document.getElementById("tabela-despesas"); // Obtém a referência da tabela
+
+                ret.data.result.forEach(element => { // Use ret.data.result ao invés de ret.data
+                    const novaLinha = document.createElement("tr");
+                    novaLinha.innerHTML = `
+                        <td>${element.DescricaoDespesa}</td>
+                        <td>${element.ValorDespesa}</td>
+                        <td>${element.tipo || ''}</td>
+                        `;
+                    tabelaDespesas.appendChild(novaLinha);
+                });
+            })
+
+    }
+
+
 
 </script>
 
