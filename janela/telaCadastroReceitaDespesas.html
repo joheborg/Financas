@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <title>Finanças</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="telaMenu.html">FINANÇAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="telaCadastroReceitaDespesas.html">Receita e despesas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="telaInvestimentos.html">Investimentos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Gerenciar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-3">
+
+    </div>
+    <div class="row text-center pt-5">
+        <div class="col-sm-3 text-center">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="Digite o valor bruto de sua renda."
+                    aria-label="Digite o valor bruto de sua renda." aria-describedby="button-addon2" id="valorbruto">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    onclick="calcularINSS();">SALVAR</button>
+            </div>
+        </div>
+        <div class="col-sm-3 text-center">
+            <div>
+                <input type="text" class="form-control" placeholder="Aqui ficará o valor liquido com desconto de INSS."
+                    aria-label="Aqui ficará o valor liquido com desconto de INSS." id="valorliquido" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="Digite o valor de auxilio alimentação / refeição."
+                    aria-label="Digite o valor bruto de sua renda." id="auxilioAlimentacao">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group mb-3 mx-3">
+                <input type="text" class="form-control" placeholder="Digite o valor de auxilio gasolina / outros."
+                    aria-label="Digite o valor bruto de sua renda." id="auxilioGeral">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-4 mx-3">
+                <button type="button" class="btn btn-secondary" onclick="salvarReceita();">
+                    <i class="fas fa-plus"></i> SALVAR RECEITA
+                </button>
+            </div>
+        </div>
+        <div class=" row col-md-6 ">
+            <div class="col-md-4">
+                <div>
+                    <input type="text" class="form-control telaDespesas" placeholder="Titulo despesas."
+                        aria-label="Titulo despesas." id="tituloNovaDespesa">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <input type="text" class="form-control telaDespesas" placeholder="Valor." aria-label="Valor."
+                        id="valorNovaDespesa">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select telaDespesas" id="selectTipoDespesas">
+                    <option selected disabled>Tipo de Gastos</option>
+                    <option value="Gastosnecessarios">Gastos necessários</option>
+                    <option value="Gastosnaoessenciais">Gastos não essenciais</option>
+                    <option value="Investimento">Investimento</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary" onclick="salvarDespesa();">
+                    <i class="fas fa-plus"></i> SALVAR
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="col-md-12 mx-3">
+                <button type="button" class="btn btn-secondary col-md-3 align-self-end" onclick="selectReceita();">
+                    <i class="fas fa-plus"></i> PESQUISAR RECEITA
+                </button>
+            </div>
+            <div class="input-group mb-3 mx-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">RENDA BRUTA</th>
+                            <th scope="col">RENDA LIQUIDA</th>
+                            <th scope="col">AUX. ALIME</th>
+                            <th scope="col">AUX. GERAL</th>
+                            <th scope="col">TOTAL RENDA</th>
+                            <th scope="col">VALOR INVEST.</th>
+                            <th scope="col">VALOR N ESSENC.</th>
+                            <th scope="col">VALOR ESSENC.</th>
+                            <th scope="col">INVEST. REST</th>
+                            <th scope="col">N.ESSENC. REST</th>
+                            <th scope="col">ESSENCIAL REST</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-receita">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-secondary col-md-3 align-self-end" onclick="selectDespesa();">
+                    <i class="fas fa-plus"></i> PESQUISAR RECEITA
+                </button>
+            </div>
+            <div class="input-group mb-3 mx-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">DESPESAS</th>
+                            <th scope="col">VALOR</th>
+                            <th scope="col">TIPO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-despesas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var IDUsuario = 1;
+    function calcularINSS() {
+        let valorBruto = $('#valorbruto').val();
+        valorBruto.replaceAll('.', '').replaceAll(',', '.');
+        if (valorBruto <= 1320) {
+            let valorDesconto = 7.63;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+        if (valorBruto <= 2571.29) {
+            let valorDesconto = 9;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+        if (valorBruto <= 3856.94) {
+            let valorDesconto = 12;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+        if (valorBruto <= 7507.29) {
+            let valorDesconto = 14;
+            let valorDescontoVezesBruto = ((100 - valorDesconto) * valorBruto) / 100;
+            $('#valorliquido').val(valorDescontoVezesBruto)
+            return;
+        }
+
+    }
+
+    function salvarDespesa() {
+        let descricaoDespesa = $('#tituloNovaDespesa').val();
+        let valorDespesa = $('#valorNovaDespesa').val();
+        let tipoDespesa = $('#selectTipoDespesas').val();
+        if (tipoDespesa == "Tipo de Gastos") {
+            alert("Selecione o tipo de despesa.");
+            return;
+        }
+        if (valorDespesa == "") {
+            alert("Digite o valor da despesa.");
+            return;
+        }
+        if (descricaoDespesa == "") {
+            alert("Descreva a despesa.");
+            return;
+        }
+        let dataToSend = {
+            "IDUsuario": IDUsuario,
+            "DescricaoDespesa": descricaoDespesa,
+            "ValorDespesa": valorDespesa.replaceAll('.', '').replaceAll(',', '.'),
+            "IDTipoDespesa": tipoDespesa,
+            "Mes": 8,
+            "Ano": 2023
+        };
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:81/inserir-financas",
+            data: JSON.stringify(dataToSend),
+            contentType: "application/json",
+
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        })
+            .done(function (ret) {
+                if (ret["data"]["ID"] > 0) {
+                    alert("Dados salvos com sucesso.");
+                    $('.telaDespesas').val("");
+                    selectDespesa();
+                }
+            })
+    }
+
+    function selectDespesa() {
+        let dataToSend = {
+            "IDUsuario": IDUsuario,
+            "Mes": 8,
+            "Ano": 2023
+        };
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:81/select-financas",
+            data: JSON.stringify(dataToSend),
+            contentType: "application/json",
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        })
+            .done(function (ret) {
+                var tbody = document.getElementById("tabela-despesas");
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+                const tabelaDespesas = document.getElementById("tabela-despesas");
+                ret.data.result.forEach(element => {
+                    const novaLinha = document.createElement("tr");
+                    novaLinha.innerHTML = `
+                        <td>${element.DescricaoDespesa}</td>
+                        <td>${element.ValorDespesa}</td>
+                        <td>${element.tipo || ''}</td>
+                        `;
+                    tabelaDespesas.appendChild(novaLinha);
+                });
+            })
+    }
+
+    function salvarReceita() {
+        let valorbruto = $('#valorbruto').val();
+        let valorliquido = $('#valorliquido').val();
+        let auxilioAlimentacao = $('#auxilioAlimentacao').val();
+        let auxilioGeral = $('#auxilioGeral').val();
+        if (valorliquido == "") {
+            alert("Salve o valor bruto para prosseguir.");
+            return;
+        }
+        if (valorbruto == "" || valorliquido == "") {
+            alert("Preencha o campo de valor bruto com sua renda mensal bruta.");
+            return;
+        }
+        let dataToSend = {
+            "IDUsuario": 1,
+            "RendaBruta": valorbruto.replaceAll('.', '').replaceAll(',', '.'),
+            "RendaLiquida": valorliquido.replaceAll('.', '').replaceAll(',', '.'),
+            "AuxilioAlimentacao": auxilioAlimentacao.replaceAll('.', '').replaceAll(',', '.'),
+            "AuxiliosGerais": auxilioGeral.replaceAll('.', '').replaceAll(',', '.'),
+            "Mes": 9,
+            "Ano": 2023
+        };
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:81/inserir-receita",
+            data: JSON.stringify(dataToSend),
+            contentType: "application/json",
+
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        })
+            .done(function (ret) {
+                if (ret["data"]["ID"] > 0) {
+                    alert("Dados salvos com sucesso.");
+                }
+            })
+    }
+
+    function selectReceita() {
+        let dataToSend = {
+            "IDUsuario": IDUsuario,
+            "Mes": 8,
+            "Ano": 2023
+        };
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:81/select-receita",
+            data: JSON.stringify(dataToSend),
+            contentType: "application/json",
+
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        })
+            .done(function (ret) {
+                var tbody = document.getElementById("tabela-receita");
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+                const tabelaReceita = document.getElementById("tabela-receita");
+                if (ret.data.result[3]['RendaBruta'] != 'Investimento') {
+                    alert('Problema nos dados, verifique se a receita foi gerada');
+                    return;
+                }
+                let RendaBruta = parseFloat(ret.data.result[0]['RendaBruta']);
+                let RendaLiquida = parseFloat(ret.data.result[0]['RendaLiquida']);
+                let AuxilioAlimentacao = parseFloat(ret.data.result[0]['AuxilioAlimentacao']);
+                let AuxiliosGerais = parseFloat(ret.data.result[0]['AuxiliosGerais']);
+                let ValorInvestBanco = parseFloat(ret.data.result[3]['RendaLiquida'] == null ? 0 : ret.data.result[3]['RendaLiquida']);
+                let ValorNEseencialBanco = parseFloat(ret.data.result[2]['RendaLiquida'] == null ? 0 : ret.data.result[2]['RendaLiquida']);
+                let ValorEssencialBanco = parseFloat(ret.data.result[1]['RendaLiquida'] == null ? 0 : ret.data.result[1]['RendaLiquida']);
+                let TotalRenda = RendaLiquida + AuxilioAlimentacao + AuxiliosGerais;
+                let ValorInvest = parseFloat(RendaLiquida) * 0.20;
+                let ValorEssencial = (parseFloat(RendaLiquida) * 0.50) + parseFloat(AuxilioAlimentacao) + parseFloat(AuxiliosGerais);
+                let ValorNEseencial = parseFloat(RendaLiquida) * 0.30;
+                let ValorInvestRest = ValorInvest - ValorInvestBanco;
+                let ValorNEssencialRest = ValorNEseencial - ValorNEseencialBanco;
+                let ValorEssencialRest = ValorEssencial - ValorEssencialBanco;
+
+                const novaLinha = document.createElement("tr");
+                novaLinha.innerHTML = `
+                        <td>${RendaBruta.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${RendaLiquida.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${AuxilioAlimentacao.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${AuxiliosGerais.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${TotalRenda.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorInvest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorNEseencial.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorEssencial.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorInvestRest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorNEssencialRest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorEssencialRest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        
+
+                        `;
+                tabelaReceita.appendChild(novaLinha);
+            });
+    }
+</script>
+</html>

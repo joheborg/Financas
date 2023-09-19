@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <title>Investimentos</title>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="telaMenu.html">FINANÇAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="telaCadastroReceitaDespesas.html">Receita e
+                  despesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investimentos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Gerenciar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="pt-5">
+  </div>
+  <div>
+    <div class="row pt-3 px-3">
+      <div class="col-md-1">
+        <div>
+          <input type="text" class="form-control telaDespesas" placeholder="Id." id="idAtivo" disabled>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div>
+          <input type="text" class="form-control telaDespesas" placeholder="Nome." id="nomeCotas">
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div>
+          <input type="text" class="form-control telaDespesas" placeholder="Cotas." id="quantidadeCotas">
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div>
+          <input type="text" class="form-control telaDespesas" placeholder="Valor unitário."
+            id="valorCotaCompradaUnitario">
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div>
+          <input type="text" class="form-control telaDespesas" placeholder="Valor total." id="valorCotaCompradaTotal">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <select class="form-select telaInvestimento" id="tipoInvestimento">
+          <option selected disabled>Tipo de Investimento</option>
+          <option value="tesouroDireto">Tesouro Direto</option>
+          <option value="CDB">CDB</option>
+          <option value="LCIeLCA">LCI e LCA</option>
+          <option value="Acoes">Ações de empresas</option>
+          <option value="FundoInvestimentos">Fundos de Investimentos</option>
+        </select>
+      </div>
+      <div class="col-md-auto">
+        <button type="button" class="btn btn-secondary" onclick="salvarInvestimento();">
+          <i class="bi bi-floppy2"></i> SALVAR
+        </button>
+      </div>
+      <div class="col-md-auto">
+        <button type="button" class="btn btn-secondary" onclick="novoInvestimento();">
+          <i class="fas fa-plus"></i> NOVO
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-12 mx-3">
+      <button type="button" class="btn btn-secondary col-md-2 align-self-end" onclick="pesquisarInvestimento();">
+        <i class="fas fa-plus"></i> PESQUISAR INVESTIMENTOS
+      </button>
+    </div>
+    <div class="input-group mb-3 mx-3">
+      <table class="table table-hover mt-2">
+        <thead class="table-dark">
+          <tr>
+            <th class="text-center" scope="col">NOME COTA</th>
+            <th class="text-center" scope="col">VALOR MÉDIO</th>
+            <th class="text-center" scope="col">VALOR COTA AGORA</th>
+            <th class="text-center" scope="col">QUANT. COTA</th>
+            <th class="text-center" scope="col">TOTAL PAGO</th>
+            <th class="text-center" scope="col">%</th>
+            <th class="text-center" scope="col">RENDIMENTO</th>
+            <th class="text-center" scope="col">TOTAL AGORA</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-investimento" class="active">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script>
+  var IDUsuario = 1;
+  $('#idAtivo').val("");
+  $('#nomeCotas').val("");
+  $('#quantidadeCotas').val("");
+  $('#valorCotaCompradaTotal').val("");
+  $('#valorCotaCompradaUnitario').val("");
+  function buscarValorAtivo(nome, callback) {
+    let API = `https://brapi.dev/api/quote/${nome}?aXk5rNar5vjco3EDfVViPV`;
+    $.ajax({
+      method: "GET",
+      url: API,
+      success: function (ret) {
+        const valorAtivo = ret.results[0]['regularMarketPrice'];
+        callback(null, valorAtivo);
+      },
+      error: function (xhr, status, error) {
+        callback(error, null);
+      }
+    });
+  }
+
+  function novoInvestimento() {
+    $('#idAtivo').val("");
+    $('#nomeCotas').val("");
+    $('#quantidadeCotas').val("");
+    $('#valorCotaCompradaTotal').val("");
+    $('#valorCotaCompradaUnitario').val("");
+  }
+
+  function pesquisarInvestimento() {
+    var num = 0;
+    var totalPago = 0.00;
+    var totalAgora = 0.00;
+    var totalRendimento = 0.00;
+    var totalRendimentoPorc = 0.0000;
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:81/select-investimento",
+      error: function (xhr, status, error) {
+        console.error(error);
+      }
+    })
+      .done(function (ret) {
+        var tbody = document.getElementById("tabela-investimento");
+        while (tbody.firstChild) {
+          tbody.removeChild(tbody.firstChild);
+        }
+        const tabelaReceita = document.getElementById("tabela-investimento");
+        function processarElement(element) {
+          const NomeAtivo = element["NomeAtivo"];
+          const CotasAtivo = parseFloat(element["Cotas"]);
+          const ValorMedio = parseFloat(element["ValorCompra"]);
+          const idAtivo = element["ID"];
+          buscarValorAtivo(NomeAtivo, function (error, CotacaoAtivoAgora) {
+            if (error) {
+              console.error(`Erro ao buscar o valor do ativo ${NomeAtivo}: ${error}`);
+              return;
+            }
+            const ValorTotalPago = CotasAtivo * ValorMedio;
+            const ValorTotalAgora = CotacaoAtivoAgora * CotasAtivo;
+            const RendimentoAtivo = 1 - (ValorTotalPago / ValorTotalAgora);
+            const RendimentoValor = ValorTotalAgora - ValorTotalPago;
+            totalPago = totalPago + ValorTotalPago;
+            totalAgora = totalAgora + ValorTotalAgora;
+            totalRendimento = totalRendimento + RendimentoValor;
+            totalRendimentoPorc = totalRendimentoPorc + RendimentoAtivo;
+            const novaLinha = document.createElement("tr");
+            novaLinha.setAttribute("onclick", `selectAtivoID(${idAtivo})`);
+            novaLinha.innerHTML = `
+              <td class="text-center" type="button">${NomeAtivo}</td>
+              <td class="text-center" type="button">${ValorMedio.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${CotacaoAtivoAgora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${CotasAtivo}</td>
+              <td class="text-center" type="button">${ValorTotalPago.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${(RendimentoAtivo * 1).toFixed(4)}%</td>
+              <td class="text-center" type="button">${RendimentoValor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${ValorTotalAgora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              `;
+            tabelaReceita.appendChild(novaLinha);
+            num += 1;
+            if (ret.data.result.length == num) {
+              adicionarLinhaDeTotais()
+            }
+          });
+        }
+        for (const element of ret.data.result) {
+          processarElement(element);
+        }
+
+        function adicionarLinhaDeTotais() {
+          const linhaTotal = document.createElement("tr");
+          linhaTotal.innerHTML = `
+            <td class="text-center"><strong>TOTAL</strong></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"><strong>${totalPago.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong></td>
+            <td class="text-center"><strong>${(totalRendimentoPorc * 100).toFixed(4)}%</strong></td>
+            <td class="text-center"><strong>${totalRendimento.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong></td>
+            <td class="text-center"><strong>${totalAgora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong></td>
+            `;
+          tabelaReceita.appendChild(linhaTotal);
+        }
+      });
+  }
+
+  function salvarInvestimento() {
+    let idAtivoSalvar = $('#idAtivo').val();
+    let nomeCotas = $('#nomeCotas').val();
+    let quantidadeCotas = $('#quantidadeCotas').val();
+    let valorCotaComprada = $('#valorCotaCompradaUnitario').val().replaceAll('.', '').replaceAll(',', '.');
+    let valorCotaCompradaTotal = $('#valorCotaCompradaTotal').val().replaceAll('.', '').replaceAll(',', '.');
+    let tipoInvestimento = $('#tipoInvestimento').val();
+    if (nomeCotas == '' || quantidadeCotas == '' || valorCotaComprada == '' || tipoInvestimento == '' || tipoInvestimento == 'Tipo de Investimento') {
+      alert("Dados incorretos enviados!")
+      return;
+    }
+    if (valorCotaCompradaTotal != "") {
+      valorCotaComprada = (parseFloat(valorCotaCompradaTotal) / parseFloat(quantidadeCotas));
+    }
+    var dataToSend = {
+      "ID": idAtivoSalvar,
+      "Mes": 9,
+      "Ano": 2023,
+      "IDUsuario": IDUsuario,
+      "Cotas": quantidadeCotas,
+      "ValorCompra": valorCotaComprada,
+      "NomeAtivo": nomeCotas
+    };
+    if (idAtivoSalvar == "") {
+      $.ajax({
+        method: "POST",
+        url: "http://localhost:81/insert-investimento",
+        data: JSON.stringify(dataToSend),
+        contentType: "application/json",
+        error: function (xhr, status, error) {
+          console.error(error);
+        }
+      })
+        .done(function (ret) {
+          if (ret.data[0]["ID"] > 0) {
+            alert("Dados salvos com sucesso.");
+          }
+          $('#idAtivo').val("");
+          $('#tipoInvestimento').val("");
+          $('#nomeCotas').val("");
+          $('#quantidadeCotas').val("");
+          $('#valorCotaCompradaTotal').val("");
+          $('#valorCotaCompradaUnitario').val("");
+        })
+      return;
+    }
+    if (idAtivoSalvar != "") {
+      $.ajax({
+        method: "POST",
+        url: "http://localhost:81/update-investimento",
+        data: JSON.stringify(dataToSend),
+        contentType: "application/json",
+        error: function (xhr, status, error) {
+          console.error(error);
+        }
+      })
+        .done(function (ret) {
+          if (ret.data[0]["ID"] > 0) {
+            alert("Dados atualizados com sucesso.");
+          }
+          $('#idAtivo').val("");
+          $('#tipoInvestimento').val("");
+          $('#nomeCotas').val("");
+          $('#quantidadeCotas').val("");
+          $('#valorCotaCompradaTotal').val("");
+          $('#valorCotaCompradaUnitario').val("");
+        })
+      return;
+    }
+  }
+
+  function selectAtivoID(ID) {
+    let dataToSend = {
+      "ID": ID
+    };
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:81/selecionar-investimento",
+      data: JSON.stringify(dataToSend),
+      contentType: "application/json",
+      error: function (xhr, status, error) {
+        console.error(error);
+      }
+    })
+      .done(function (ret) {
+        if (ret.data.result[0]["ID"] > 0) {
+          alert("Dados salvos com sucesso.");
+          $('#idAtivo').val(ret.data.result[0]["ID"]);
+          $('#tipoInvestimento').val("");
+          $('#nomeCotas').val(ret.data.result[0]["NomeAtivo"]);
+          $('#quantidadeCotas').val(ret.data.result[0]["Cotas"]);
+          $('#valorCotaCompradaUnitario').val(ret.data.result[0]["ValorCompra"].replaceAll('.', ','));
+          $('#valorCotaCompradaTotal').val((parseFloat(ret.data.result[0]["ValorCompra"]) * parseFloat(ret.data.result[0]["Cotas"])).toLocaleString('pt-br'));
+        }
+      })
+
+  }
+</script>
+
+</html>

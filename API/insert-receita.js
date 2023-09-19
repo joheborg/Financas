@@ -1,12 +1,11 @@
 const { connection } = require("./database-config");
 
 function insertReceita(req, res) {
-    const { IDUsuario, DescricaoDespesa, ValorDespesa, IDTipoDespesa, Mes, Ano } = req.body;
-    console.log(req);
-    const query = `INSERT INTO Financas (IDUsuario, DescricaoDespesa, ValorDespesa, IDTipoDespesa, Mes, Ano)
-        VALUES (?, ?, ?, ( SELECT ID FROM TipoDespesa WHERE Tipo = ?), ?, ?);`;
+    const { IDUsuario, RendaBruta, RendaLiquida, AuxilioAlimentacao, AuxiliosGerais, Mes, Ano } = req.body;
+    const query = `INSERT INTO Receita (IDUsuario, RendaBruta, RendaLiquida, AuxilioAlimentacao, AuxiliosGerais, Mes, Ano)
+        VALUES (?, ?, ?, ?, ?, ?, ?);`;
 
-    connection.query(query, [IDUsuario, DescricaoDespesa, ValorDespesa, IDTipoDespesa, Mes, Ano], (err, result) => {
+    connection.query(query, [IDUsuario, RendaBruta, RendaLiquida, AuxilioAlimentacao, AuxiliosGerais, Mes, Ano], (err, result) => {
         if (err) {
             res.status(500).json({ error: err.message });
         } else {
@@ -14,6 +13,4 @@ function insertReceita(req, res) {
         }
     });
 }
-
-
 module.exports = { insertReceita }

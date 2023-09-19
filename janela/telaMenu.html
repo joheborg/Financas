@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <title>Menu</title>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="telaMenu.html">FINANÇAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="telaCadastroReceitaDespesas.html">Receita e
+                  despesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="telaInvestimentos.html">Investimentos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Gerenciar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="row mt-5">
+    <div class="input-group mb-3 mx-3">
+      <table class="table table-hover mt-2">
+        <thead class="table-dark">
+          <tr>
+            <th class="text-center" scope="col">NOME COTA</th>
+            <th class="text-center" scope="col">VALOR MÉDIO</th>
+            <th class="text-center" scope="col">VALOR COTA AGORA</th>
+            <th class="text-center" scope="col">QUANT. COTA</th>
+            <th class="text-center" scope="col">TOTAL PAGO</th>
+            <th class="text-center" scope="col">%</th>
+            <th class="text-center" scope="col">RENDIMENTO</th>
+            <th class="text-center" scope="col">TOTAL AGORA</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-investimento-MENU" class="active">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="input-group mb-3 mx-3">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">RENDA BRUTA</th>
+            <th scope="col">RENDA LIQUIDA</th>
+            <th scope="col">AUX. ALIME</th>
+            <th scope="col">AUX. GERAL</th>
+            <th scope="col">TOTAL RENDA</th>
+            <th scope="col">VALOR INVEST.</th>
+            <th scope="col">VALOR N ESSENC.</th>
+            <th scope="col">VALOR ESSENC.</th>
+            <th scope="col">INVEST. REST</th>
+            <th scope="col">N.ESSENC. REST</th>
+            <th scope="col">ESSENCIAL REST</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-receita-MENU">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script>
+  var IDUsuario = 1;
+  function buscarValorAtivo(nome, callback) {
+    let API = `https://brapi.dev/api/quote/${nome}?aXk5rNar5vjco3EDfVViPV`;
+    $.ajax({
+      method: "GET",
+      url: API,
+      success: function (ret) {
+        const valorAtivo = ret.results[0]['regularMarketPrice'];
+        callback(null, valorAtivo);
+      },
+      error: function (xhr, status, error) {
+        callback(error, null);
+      }
+    });
+  }
+
+  function pesquisarInvestimento() {
+    var num = 0;
+    var totalPago = 0.00;
+    var totalAgora = 0.00;
+    var totalRendimento = 0.00;
+    var totalRendimentoPorc = 0.0000;
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:81/select-investimento",
+      error: function (xhr, status, error) {
+        console.error(error);
+      }
+    })
+      .done(function (ret) {
+        var tbody = document.getElementById("tabela-investimento-MENU");
+        while (tbody.firstChild) {
+          tbody.removeChild(tbody.firstChild);
+        }
+        const tabelaReceita = document.getElementById("tabela-investimento-MENU");
+        function processarElement(element) {
+          const NomeAtivo = element["NomeAtivo"];
+          const CotasAtivo = parseFloat(element["Cotas"]);
+          const ValorMedio = parseFloat(element["ValorCompra"]);
+          const idAtivo = element["ID"];
+          buscarValorAtivo(NomeAtivo, function (error, CotacaoAtivoAgora) {
+            if (error) {
+              console.error(`Erro ao buscar o valor do ativo ${NomeAtivo}: ${error}`);
+              return;
+            }
+            const ValorTotalPago = CotasAtivo * ValorMedio;
+            const ValorTotalAgora = CotacaoAtivoAgora * CotasAtivo;
+            const RendimentoAtivo = 1 - (ValorTotalPago / ValorTotalAgora);
+            const RendimentoValor = ValorTotalAgora - ValorTotalPago;
+            totalPago = totalPago + ValorTotalPago;
+            totalAgora = totalAgora + ValorTotalAgora;
+            totalRendimento = totalRendimento + RendimentoValor;
+            totalRendimentoPorc = totalRendimentoPorc + RendimentoAtivo;
+            const novaLinha = document.createElement("tr");
+            novaLinha.setAttribute("onclick", `selectAtivoID(${idAtivo})`);
+            novaLinha.innerHTML = `
+              <td class="text-center" type="button">${NomeAtivo}</td>
+              <td class="text-center" type="button">${ValorMedio.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${CotacaoAtivoAgora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${CotasAtivo}</td>
+              <td class="text-center" type="button">${ValorTotalPago.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${(RendimentoAtivo * 1).toFixed(4)}%</td>
+              <td class="text-center" type="button">${RendimentoValor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              <td class="text-center" type="button">${ValorTotalAgora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+              `;
+            tabelaReceita.appendChild(novaLinha);
+            num += 1;
+            if (ret.data.result.length == num) {
+              adicionarLinhaDeTotais()
+            }
+          });
+        }
+        for (const element of ret.data.result) {
+          processarElement(element);
+        }
+
+        function adicionarLinhaDeTotais() {
+          const linhaTotal = document.createElement("tr");
+          linhaTotal.innerHTML = `
+            <td class="text-center"><strong>TOTAL</strong></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"><strong>${totalPago.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong></td>
+            <td class="text-center"><strong>${(totalRendimentoPorc * 100).toFixed(4)}%</strong></td>
+            <td class="text-center"><strong>${totalRendimento.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong></td>
+            <td class="text-center"><strong>${totalAgora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong></td>
+            `;
+          tabelaReceita.appendChild(linhaTotal);
+        }
+      });
+  }
+  pesquisarInvestimento();
+  function selectReceita() {
+    let dataToSend = {
+      "IDUsuario": IDUsuario,
+      "Mes": 8,
+      "Ano": 2023
+    };
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:81/select-receita",
+      data: JSON.stringify(dataToSend),
+      contentType: "application/json",
+
+      error: function (xhr, status, error) {
+        console.error(error);
+      }
+    })
+      .done(function (ret) {
+        var tbody = document.getElementById("tabela-receita-MENU");
+        while (tbody.firstChild) {
+          tbody.removeChild(tbody.firstChild);
+        }
+        const tabelaReceita = document.getElementById("tabela-receita-MENU");
+        if (ret.data.result[3]['RendaBruta'] != 'Investimento') {
+          alert('Problema nos dados, verifique se a receita foi gerada');
+          return;
+        }
+        let RendaBruta = parseFloat(ret.data.result[0]['RendaBruta']);
+        let RendaLiquida = parseFloat(ret.data.result[0]['RendaLiquida']);
+        let AuxilioAlimentacao = parseFloat(ret.data.result[0]['AuxilioAlimentacao']);
+        let AuxiliosGerais = parseFloat(ret.data.result[0]['AuxiliosGerais']);
+        let ValorInvestBanco = parseFloat(ret.data.result[3]['RendaLiquida'] == null ? 0 : ret.data.result[3]['RendaLiquida']);
+        let ValorNEseencialBanco = parseFloat(ret.data.result[2]['RendaLiquida'] == null ? 0 : ret.data.result[2]['RendaLiquida']);
+        let ValorEssencialBanco = parseFloat(ret.data.result[1]['RendaLiquida'] == null ? 0 : ret.data.result[1]['RendaLiquida']);
+        let TotalRenda = RendaLiquida + AuxilioAlimentacao + AuxiliosGerais;
+        let ValorInvest = parseFloat(RendaLiquida) * 0.20;
+        let ValorEssencial = (parseFloat(RendaLiquida) * 0.50) + parseFloat(AuxilioAlimentacao) + parseFloat(AuxiliosGerais);
+        let ValorNEseencial = parseFloat(RendaLiquida) * 0.30;
+        let ValorInvestRest = ValorInvest - ValorInvestBanco;
+        let ValorNEssencialRest = ValorNEseencial - ValorNEseencialBanco;
+        let ValorEssencialRest = ValorEssencial - ValorEssencialBanco;
+
+        const novaLinha = document.createElement("tr");
+        novaLinha.innerHTML = `
+                        <td>${RendaBruta.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${RendaLiquida.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${AuxilioAlimentacao.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${AuxiliosGerais.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${TotalRenda.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorInvest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorNEseencial.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorEssencial.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorInvestRest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorNEssencialRest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        <td>${ValorEssencialRest.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</td>
+                        
+
+                        `;
+        tabelaReceita.appendChild(novaLinha);
+      });
+  }
+  selectReceita();
+
+
+</script>
+
+</html>
