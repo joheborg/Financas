@@ -1,0 +1,474 @@
+[Sat Sep 23 00:23:07.088066 2023] [mpm_winnt:notice] [pid 9756:tid 396] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 00:23:07.088066 2023] [mpm_winnt:notice] [pid 9756:tid 396] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 00:23:07.088066 2023] [core:notice] [pid 9756:tid 396] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Sat Sep 23 00:23:07.092086 2023] [mpm_winnt:notice] [pid 9756:tid 396] AH00418: Parent: Created child process 26152
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 26152:tid 372] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 12:04:02.176226 2023] [mpm_winnt:notice] [pid 9756:tid 396] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 12:04:04.189153 2023] [mpm_winnt:notice] [pid 26152:tid 372] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 12:04:04.382209 2023] [mpm_winnt:notice] [pid 9756:tid 396] AH00430: Parent: Child process 26152 exited successfully.
+[Sat Sep 23 12:20:09.271104 2023] [mpm_winnt:notice] [pid 21060:tid 340] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 12:20:09.271104 2023] [mpm_winnt:notice] [pid 21060:tid 340] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 12:20:09.271104 2023] [core:notice] [pid 21060:tid 340] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Sat Sep 23 12:20:09.277102 2023] [mpm_winnt:notice] [pid 21060:tid 340] AH00418: Parent: Created child process 11316
+[Sat Sep 23 12:20:09.475137 2023] [mpm_winnt:notice] [pid 11316:tid 340] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 12:33:41.836619 2023] [core:warn] [pid 17176:tid 372] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Sep 23 12:33:41.838640 2023] [mpm_winnt:notice] [pid 17176:tid 372] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 12:33:41.838640 2023] [mpm_winnt:notice] [pid 17176:tid 372] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 12:33:41.838640 2023] [core:notice] [pid 17176:tid 372] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 12:33:41.842628 2023] [mpm_winnt:notice] [pid 17176:tid 372] AH00418: Parent: Created child process 11660
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 11660:tid 360] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 12:36:07.774700 2023] [mpm_winnt:notice] [pid 17176:tid 372] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 12:36:09.788623 2023] [mpm_winnt:notice] [pid 11660:tid 360] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 12:36:09.821695 2023] [mpm_winnt:notice] [pid 17176:tid 372] AH00430: Parent: Child process 11660 exited successfully.
+[Sat Sep 23 12:36:53.404864 2023] [mpm_winnt:notice] [pid 24808:tid 396] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 12:36:53.405873 2023] [mpm_winnt:notice] [pid 24808:tid 396] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 12:36:53.405873 2023] [core:notice] [pid 24808:tid 396] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 12:36:53.408865 2023] [mpm_winnt:notice] [pid 24808:tid 396] AH00418: Parent: Created child process 12180
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 12180:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 12:36:55.271463 2023] [mpm_winnt:notice] [pid 24808:tid 396] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 12:36:57.288717 2023] [mpm_winnt:notice] [pid 12180:tid 344] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 12:36:57.318121 2023] [mpm_winnt:notice] [pid 24808:tid 396] AH00430: Parent: Child process 12180 exited successfully.
+[Sat Sep 23 12:55:16.372332 2023] [mpm_winnt:notice] [pid 5392:tid 384] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 12:55:16.373336 2023] [mpm_winnt:notice] [pid 5392:tid 384] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 12:55:16.373336 2023] [core:notice] [pid 5392:tid 384] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 12:55:16.378326 2023] [mpm_winnt:notice] [pid 5392:tid 384] AH00418: Parent: Created child process 8372
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 8372:tid 336] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 14:54:00.223691 2023] [mpm_winnt:notice] [pid 5392:tid 384] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 14:54:02.247459 2023] [mpm_winnt:notice] [pid 8372:tid 336] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 14:54:02.301300 2023] [mpm_winnt:notice] [pid 5392:tid 384] AH00430: Parent: Child process 8372 exited successfully.
+[Sat Sep 23 15:03:35.639349 2023] [mpm_winnt:notice] [pid 14192:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:03:35.640357 2023] [mpm_winnt:notice] [pid 14192:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:03:35.640357 2023] [core:notice] [pid 14192:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:03:35.651057 2023] [mpm_winnt:notice] [pid 14192:tid 348] AH00418: Parent: Created child process 43132
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 43132:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:09:49.256803 2023] [mpm_winnt:notice] [pid 14192:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:09:51.266481 2023] [mpm_winnt:notice] [pid 43132:tid 344] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:09:51.299795 2023] [mpm_winnt:notice] [pid 14192:tid 348] AH00430: Parent: Child process 43132 exited successfully.
+[Sat Sep 23 15:11:21.680829 2023] [mpm_winnt:notice] [pid 25920:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:11:21.680829 2023] [mpm_winnt:notice] [pid 25920:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:11:21.680829 2023] [core:notice] [pid 25920:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:11:21.688837 2023] [mpm_winnt:notice] [pid 25920:tid 348] AH00418: Parent: Created child process 30324
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 30324:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:11:59.286345 2023] [mpm_winnt:notice] [pid 25920:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:12:01.303919 2023] [mpm_winnt:notice] [pid 30324:tid 344] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:12:01.338149 2023] [mpm_winnt:notice] [pid 25920:tid 348] AH00430: Parent: Child process 30324 exited successfully.
+[Sat Sep 23 15:12:06.299083 2023] [mpm_winnt:notice] [pid 30456:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:12:06.299083 2023] [mpm_winnt:notice] [pid 30456:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:12:06.299083 2023] [core:notice] [pid 30456:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:12:06.311373 2023] [mpm_winnt:notice] [pid 30456:tid 348] AH00418: Parent: Created child process 11664
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 11664:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:12:43.495087 2023] [mpm_winnt:notice] [pid 30456:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:12:45.518308 2023] [mpm_winnt:notice] [pid 11664:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:12:45.550138 2023] [mpm_winnt:notice] [pid 30456:tid 348] AH00430: Parent: Child process 11664 exited successfully.
+[Sat Sep 23 15:12:50.499665 2023] [mpm_winnt:notice] [pid 39876:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:12:50.499665 2023] [mpm_winnt:notice] [pid 39876:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:12:50.499665 2023] [core:notice] [pid 39876:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:12:50.503884 2023] [mpm_winnt:notice] [pid 39876:tid 348] AH00418: Parent: Created child process 41972
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 41972:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:13:05.776604 2023] [mpm_winnt:notice] [pid 39876:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:13:07.804777 2023] [mpm_winnt:notice] [pid 41972:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:13:07.841775 2023] [mpm_winnt:notice] [pid 39876:tid 348] AH00430: Parent: Child process 41972 exited successfully.
+[Sat Sep 23 15:13:39.229788 2023] [mpm_winnt:notice] [pid 20692:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:13:39.229788 2023] [mpm_winnt:notice] [pid 20692:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:13:39.229788 2023] [core:notice] [pid 20692:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:13:39.237346 2023] [mpm_winnt:notice] [pid 20692:tid 360] AH00418: Parent: Created child process 7052
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 7052:tid 352] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:14:38.857770 2023] [mpm_winnt:notice] [pid 20692:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:14:40.873186 2023] [mpm_winnt:notice] [pid 7052:tid 352] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:14:40.904357 2023] [mpm_winnt:notice] [pid 20692:tid 360] AH00430: Parent: Child process 7052 exited successfully.
+[Sat Sep 23 15:14:45.492834 2023] [mpm_winnt:notice] [pid 45172:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:14:45.496833 2023] [mpm_winnt:notice] [pid 45172:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:14:45.496833 2023] [core:notice] [pid 45172:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:14:45.516747 2023] [mpm_winnt:notice] [pid 45172:tid 348] AH00418: Parent: Created child process 30284
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 30284:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:15:09.004799 2023] [mpm_winnt:notice] [pid 45172:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:15:11.018841 2023] [mpm_winnt:notice] [pid 30284:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:15:11.058765 2023] [mpm_winnt:notice] [pid 45172:tid 348] AH00430: Parent: Child process 30284 exited successfully.
+[Sat Sep 23 15:16:00.710051 2023] [mpm_winnt:notice] [pid 44180:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:16:00.711686 2023] [mpm_winnt:notice] [pid 44180:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:16:00.711686 2023] [core:notice] [pid 44180:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:16:00.720521 2023] [mpm_winnt:notice] [pid 44180:tid 360] AH00418: Parent: Created child process 46148
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 46148:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:16:43.290304 2023] [mpm_winnt:notice] [pid 44180:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:16:48.129197 2023] [mpm_winnt:notice] [pid 46148:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:16:48.161220 2023] [mpm_winnt:notice] [pid 44180:tid 360] AH00430: Parent: Child process 46148 exited successfully.
+[Sat Sep 23 15:16:50.785224 2023] [mpm_winnt:notice] [pid 28068:tid 404] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:16:50.789199 2023] [mpm_winnt:notice] [pid 28068:tid 404] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:16:50.789199 2023] [core:notice] [pid 28068:tid 404] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:16:50.833203 2023] [mpm_winnt:notice] [pid 28068:tid 404] AH00418: Parent: Created child process 49192
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 49192:tid 352] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:17:54.703864 2023] [mpm_winnt:notice] [pid 28068:tid 404] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:17:56.717351 2023] [mpm_winnt:notice] [pid 49192:tid 352] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:17:56.754966 2023] [mpm_winnt:notice] [pid 28068:tid 404] AH00430: Parent: Child process 49192 exited successfully.
+[Sat Sep 23 15:18:06.457167 2023] [mpm_winnt:notice] [pid 260:tid 400] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:18:06.461168 2023] [mpm_winnt:notice] [pid 260:tid 400] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:18:06.461168 2023] [core:notice] [pid 260:tid 400] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:18:06.501200 2023] [mpm_winnt:notice] [pid 260:tid 400] AH00418: Parent: Created child process 50264
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 50264:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:23:37.059176 2023] [mpm_winnt:notice] [pid 260:tid 400] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:23:39.073298 2023] [mpm_winnt:notice] [pid 50264:tid 344] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:23:39.103379 2023] [mpm_winnt:notice] [pid 260:tid 400] AH00430: Parent: Child process 50264 exited successfully.
+[Sat Sep 23 15:24:30.036684 2023] [mpm_winnt:notice] [pid 40956:tid 372] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 15:24:30.041248 2023] [mpm_winnt:notice] [pid 40956:tid 372] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 15:24:30.041248 2023] [core:notice] [pid 40956:tid 372] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 15:24:30.785019 2023] [mpm_winnt:notice] [pid 40956:tid 372] AH00418: Parent: Created child process 38448
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 38448:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 15:36:59.742146 2023] [mpm_winnt:notice] [pid 40956:tid 372] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 15:37:01.755886 2023] [mpm_winnt:notice] [pid 38448:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 15:37:01.903421 2023] [mpm_winnt:notice] [pid 40956:tid 372] AH00430: Parent: Child process 38448 exited successfully.
+[Sat Sep 23 16:18:33.698172 2023] [mpm_winnt:notice] [pid 13096:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 16:18:33.699181 2023] [mpm_winnt:notice] [pid 13096:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 16:18:33.699181 2023] [core:notice] [pid 13096:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 16:18:33.701181 2023] [mpm_winnt:notice] [pid 13096:tid 360] AH00418: Parent: Created child process 27448
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 27448:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 16:24:39.859772 2023] [mpm_winnt:notice] [pid 13096:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 16:24:41.865625 2023] [mpm_winnt:notice] [pid 27448:tid 344] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 16:24:41.905619 2023] [mpm_winnt:notice] [pid 13096:tid 360] AH00430: Parent: Child process 27448 exited successfully.
+[Sat Sep 23 16:25:25.766167 2023] [mpm_winnt:notice] [pid 26656:tid 352] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 16:25:25.766167 2023] [mpm_winnt:notice] [pid 26656:tid 352] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 16:25:25.766167 2023] [core:notice] [pid 26656:tid 352] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 16:25:25.769168 2023] [mpm_winnt:notice] [pid 26656:tid 352] AH00418: Parent: Created child process 22404
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 22404:tid 388] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 16:38:56.683795 2023] [mpm_winnt:notice] [pid 26656:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 16:38:58.694904 2023] [mpm_winnt:notice] [pid 22404:tid 388] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 16:38:58.725906 2023] [mpm_winnt:notice] [pid 26656:tid 352] AH00430: Parent: Child process 22404 exited successfully.
+[Sat Sep 23 16:39:00.687681 2023] [mpm_winnt:notice] [pid 28920:tid 352] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 16:39:00.688679 2023] [mpm_winnt:notice] [pid 28920:tid 352] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 16:39:00.688679 2023] [core:notice] [pid 28920:tid 352] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 16:39:00.690680 2023] [mpm_winnt:notice] [pid 28920:tid 352] AH00418: Parent: Created child process 29084
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 29084:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 17:01:26.014345 2023] [mpm_winnt:notice] [pid 28920:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 17:01:28.024675 2023] [mpm_winnt:notice] [pid 29084:tid 344] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 17:01:28.055675 2023] [mpm_winnt:notice] [pid 28920:tid 352] AH00430: Parent: Child process 29084 exited successfully.
+[Sat Sep 23 17:02:13.272360 2023] [mpm_winnt:notice] [pid 28716:tid 84] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 17:02:13.273350 2023] [mpm_winnt:notice] [pid 28716:tid 84] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 17:02:13.273350 2023] [core:notice] [pid 28716:tid 84] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 17:02:13.281367 2023] [mpm_winnt:notice] [pid 28716:tid 84] AH00418: Parent: Created child process 26028
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 26028:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 17:08:23.599947 2023] [mpm_winnt:notice] [pid 28716:tid 84] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 17:08:25.617316 2023] [mpm_winnt:notice] [pid 26028:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 17:08:25.661287 2023] [mpm_winnt:notice] [pid 28716:tid 84] AH00430: Parent: Child process 26028 exited successfully.
+[Sat Sep 23 17:09:04.221680 2023] [mpm_winnt:notice] [pid 9496:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 17:09:04.221680 2023] [mpm_winnt:notice] [pid 9496:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 17:09:04.221680 2023] [core:notice] [pid 9496:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 17:09:04.221680 2023] [mpm_winnt:notice] [pid 9496:tid 360] AH00418: Parent: Created child process 19320
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 19320:tid 396] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 17:17:20.319190 2023] [mpm_winnt:notice] [pid 9496:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 17:17:22.343595 2023] [mpm_winnt:notice] [pid 19320:tid 396] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 17:17:22.375237 2023] [mpm_winnt:notice] [pid 9496:tid 360] AH00430: Parent: Child process 19320 exited successfully.
+[Sat Sep 23 17:17:25.460032 2023] [mpm_winnt:notice] [pid 30044:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 17:17:25.460032 2023] [mpm_winnt:notice] [pid 30044:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 17:17:25.460032 2023] [core:notice] [pid 30044:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 17:17:25.463032 2023] [mpm_winnt:notice] [pid 30044:tid 348] AH00418: Parent: Created child process 11052
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 11052:tid 352] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 17:19:53.122910 2023] [mpm_winnt:notice] [pid 30044:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 17:19:55.134564 2023] [mpm_winnt:notice] [pid 11052:tid 352] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 17:19:55.171063 2023] [mpm_winnt:notice] [pid 30044:tid 348] AH00430: Parent: Child process 11052 exited successfully.
+[Sat Sep 23 18:16:32.402751 2023] [mpm_winnt:notice] [pid 2256:tid 388] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 18:16:32.403256 2023] [mpm_winnt:notice] [pid 2256:tid 388] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 18:16:32.403256 2023] [core:notice] [pid 2256:tid 388] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 18:16:32.403909 2023] [mpm_winnt:notice] [pid 2256:tid 388] AH00418: Parent: Created child process 29936
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 29936:tid 356] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 18:32:12.347528 2023] [mpm_winnt:notice] [pid 2256:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 18:32:14.359686 2023] [mpm_winnt:notice] [pid 29936:tid 356] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 18:32:14.378503 2023] [mpm_winnt:notice] [pid 2256:tid 388] AH00430: Parent: Child process 29936 exited successfully.
+[Sat Sep 23 18:42:11.434432 2023] [mpm_winnt:notice] [pid 24544:tid 368] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 18:42:11.434432 2023] [mpm_winnt:notice] [pid 24544:tid 368] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 18:42:11.434432 2023] [core:notice] [pid 24544:tid 368] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 18:42:11.441101 2023] [mpm_winnt:notice] [pid 24544:tid 368] AH00418: Parent: Created child process 37860
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 37860:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 19:49:58.715079 2023] [mpm_winnt:notice] [pid 24544:tid 368] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 19:50:00.723725 2023] [mpm_winnt:notice] [pid 37860:tid 348] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 19:50:00.759541 2023] [mpm_winnt:notice] [pid 24544:tid 368] AH00430: Parent: Child process 37860 exited successfully.
+[Sat Sep 23 20:06:16.724873 2023] [mpm_winnt:notice] [pid 9744:tid 388] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sat Sep 23 20:06:16.724873 2023] [mpm_winnt:notice] [pid 9744:tid 388] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sat Sep 23 20:06:16.724873 2023] [core:notice] [pid 9744:tid 388] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sat Sep 23 20:06:16.728689 2023] [mpm_winnt:notice] [pid 9744:tid 388] AH00418: Parent: Created child process 24800
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 24800:tid 372] AH00354: Child: Starting 64 worker threads.
+[Sat Sep 23 20:31:58.935668 2023] [cgi:error] [pid 24800:tid 996] [client 179.43.163.130:52208] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Sat Sep 23 20:38:04.650512 2023] [mpm_winnt:notice] [pid 9744:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Sep 23 20:38:06.663072 2023] [mpm_winnt:notice] [pid 24800:tid 372] AH00364: Child: All worker threads have exited.
+[Sat Sep 23 20:38:06.694872 2023] [mpm_winnt:notice] [pid 9744:tid 388] AH00430: Parent: Child process 24800 exited successfully.
+[Sun Sep 24 15:24:34.214726 2023] [mpm_winnt:notice] [pid 34696:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:24:34.216059 2023] [mpm_winnt:notice] [pid 34696:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:24:34.216059 2023] [core:notice] [pid 34696:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:24:34.224609 2023] [mpm_winnt:notice] [pid 34696:tid 348] AH00418: Parent: Created child process 19296
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 19296:tid 352] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 15:31:27.980289 2023] [mpm_winnt:notice] [pid 34696:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 15:31:29.994123 2023] [mpm_winnt:notice] [pid 19296:tid 352] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 15:31:30.029084 2023] [mpm_winnt:notice] [pid 34696:tid 348] AH00430: Parent: Child process 19296 exited successfully.
+[Sun Sep 24 15:31:32.192627 2023] [mpm_winnt:notice] [pid 39408:tid 396] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:31:32.193627 2023] [mpm_winnt:notice] [pid 39408:tid 396] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:31:32.193627 2023] [core:notice] [pid 39408:tid 396] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:31:32.195627 2023] [mpm_winnt:notice] [pid 39408:tid 396] AH00418: Parent: Created child process 31160
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 31160:tid 388] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 15:35:39.409724 2023] [mpm_winnt:notice] [pid 39408:tid 396] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 15:35:41.427082 2023] [mpm_winnt:notice] [pid 31160:tid 388] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 15:35:41.517741 2023] [mpm_winnt:notice] [pid 39408:tid 396] AH00430: Parent: Child process 31160 exited successfully.
+[Sun Sep 24 15:35:42.034887 2023] [mpm_winnt:notice] [pid 37936:tid 388] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:35:42.034887 2023] [mpm_winnt:notice] [pid 37936:tid 388] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:35:42.034887 2023] [core:notice] [pid 37936:tid 388] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:35:42.037400 2023] [mpm_winnt:notice] [pid 37936:tid 388] AH00418: Parent: Created child process 35336
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 35336:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 15:41:45.472816 2023] [mpm_winnt:notice] [pid 37936:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 15:41:47.491948 2023] [mpm_winnt:notice] [pid 35336:tid 344] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 15:41:47.526195 2023] [mpm_winnt:notice] [pid 37936:tid 388] AH00430: Parent: Child process 35336 exited successfully.
+[Sun Sep 24 15:41:48.965013 2023] [mpm_winnt:notice] [pid 9976:tid 364] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:41:48.965013 2023] [mpm_winnt:notice] [pid 9976:tid 364] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:41:48.965013 2023] [core:notice] [pid 9976:tid 364] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:41:48.968014 2023] [mpm_winnt:notice] [pid 9976:tid 364] AH00418: Parent: Created child process 31724
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 31724:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 15:42:27.664033 2023] [mpm_winnt:notice] [pid 9976:tid 364] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 15:42:29.681887 2023] [mpm_winnt:notice] [pid 31724:tid 348] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 15:42:29.700063 2023] [mpm_winnt:notice] [pid 9976:tid 364] AH00430: Parent: Child process 31724 exited successfully.
+[Sun Sep 24 15:42:32.814750 2023] [mpm_winnt:notice] [pid 26776:tid 356] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:42:32.814750 2023] [mpm_winnt:notice] [pid 26776:tid 356] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:42:32.814750 2023] [core:notice] [pid 26776:tid 356] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:42:32.817750 2023] [mpm_winnt:notice] [pid 26776:tid 356] AH00418: Parent: Created child process 3256
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 3256:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 15:44:36.584282 2023] [mpm_winnt:notice] [pid 26776:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 15:44:38.589074 2023] [mpm_winnt:notice] [pid 3256:tid 344] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 15:44:38.617255 2023] [mpm_winnt:notice] [pid 26776:tid 356] AH00430: Parent: Child process 3256 exited successfully.
+[Sun Sep 24 15:44:39.261083 2023] [mpm_winnt:notice] [pid 40144:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:44:39.262088 2023] [mpm_winnt:notice] [pid 40144:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:44:39.262088 2023] [core:notice] [pid 40144:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:44:39.265092 2023] [mpm_winnt:notice] [pid 40144:tid 360] AH00418: Parent: Created child process 40072
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 40072:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 15:45:37.335070 2023] [mpm_winnt:notice] [pid 40144:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 15:45:39.357368 2023] [mpm_winnt:notice] [pid 40072:tid 348] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 15:45:39.432840 2023] [mpm_winnt:notice] [pid 40144:tid 360] AH00430: Parent: Child process 40072 exited successfully.
+[Sun Sep 24 15:45:39.779367 2023] [mpm_winnt:notice] [pid 41028:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 15:45:39.779367 2023] [mpm_winnt:notice] [pid 41028:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 15:45:39.779367 2023] [core:notice] [pid 41028:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 15:45:39.781869 2023] [mpm_winnt:notice] [pid 41028:tid 348] AH00418: Parent: Created child process 38032
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 38032:tid 384] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 17:37:02.065383 2023] [cgi:error] [pid 38032:tid 960] [client 179.43.163.130:41294] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Sun Sep 24 17:42:39.486437 2023] [mpm_winnt:notice] [pid 41028:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 17:42:41.504651 2023] [mpm_winnt:notice] [pid 38032:tid 384] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 17:42:41.555902 2023] [mpm_winnt:notice] [pid 41028:tid 348] AH00430: Parent: Child process 38032 exited successfully.
+[Sun Sep 24 19:11:42.542854 2023] [mpm_winnt:notice] [pid 1924:tid 352] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 19:11:42.542854 2023] [mpm_winnt:notice] [pid 1924:tid 352] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 19:11:42.542854 2023] [core:notice] [pid 1924:tid 352] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 19:11:42.542854 2023] [mpm_winnt:notice] [pid 1924:tid 352] AH00418: Parent: Created child process 31220
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 31220:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 19:37:46.195574 2023] [mpm_winnt:notice] [pid 1924:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 19:37:48.210830 2023] [mpm_winnt:notice] [pid 31220:tid 344] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 19:37:48.241983 2023] [mpm_winnt:notice] [pid 1924:tid 352] AH00430: Parent: Child process 31220 exited successfully.
+[Sun Sep 24 19:37:50.335012 2023] [mpm_winnt:notice] [pid 29676:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 19:37:50.335012 2023] [mpm_winnt:notice] [pid 29676:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 19:37:50.335012 2023] [core:notice] [pid 29676:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 19:37:50.350638 2023] [mpm_winnt:notice] [pid 29676:tid 348] AH00418: Parent: Created child process 36264
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 36264:tid 204] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 19:38:21.748287 2023] [mpm_winnt:notice] [pid 29676:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 19:38:23.790170 2023] [mpm_winnt:notice] [pid 36264:tid 204] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 19:38:23.821112 2023] [mpm_winnt:notice] [pid 29676:tid 348] AH00430: Parent: Child process 36264 exited successfully.
+[Sun Sep 24 19:38:47.958029 2023] [mpm_winnt:notice] [pid 10952:tid 380] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 19:38:47.958029 2023] [mpm_winnt:notice] [pid 10952:tid 380] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 19:38:47.958029 2023] [core:notice] [pid 10952:tid 380] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 19:38:47.958029 2023] [mpm_winnt:notice] [pid 10952:tid 380] AH00418: Parent: Created child process 31920
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 31920:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 19:39:44.445692 2023] [mpm_winnt:notice] [pid 10952:tid 380] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 19:39:46.481514 2023] [mpm_winnt:notice] [pid 31920:tid 348] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 19:39:46.513921 2023] [mpm_winnt:notice] [pid 10952:tid 380] AH00430: Parent: Child process 31920 exited successfully.
+[Sun Sep 24 19:39:50.934477 2023] [mpm_winnt:notice] [pid 9324:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 19:39:50.934477 2023] [mpm_winnt:notice] [pid 9324:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 19:39:50.934477 2023] [core:notice] [pid 9324:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 19:39:50.934477 2023] [mpm_winnt:notice] [pid 9324:tid 360] AH00418: Parent: Created child process 35256
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 35256:tid 344] AH00354: Child: Starting 64 worker threads.
+[Sun Sep 24 23:55:34.657267 2023] [mpm_winnt:notice] [pid 9324:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Sep 24 23:55:36.691323 2023] [mpm_winnt:notice] [pid 35256:tid 344] AH00364: Child: All worker threads have exited.
+[Sun Sep 24 23:55:36.738860 2023] [mpm_winnt:notice] [pid 9324:tid 360] AH00430: Parent: Child process 35256 exited successfully.
+[Sun Sep 24 23:55:39.453097 2023] [mpm_winnt:notice] [pid 29480:tid 364] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Sep 24 23:55:39.453097 2023] [mpm_winnt:notice] [pid 29480:tid 364] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Sep 24 23:55:39.453097 2023] [core:notice] [pid 29480:tid 364] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Sep 24 23:55:39.468811 2023] [mpm_winnt:notice] [pid 29480:tid 364] AH00418: Parent: Created child process 24792
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 24792:tid 400] AH00354: Child: Starting 64 worker threads.
+[Mon Sep 25 10:50:39.944847 2023] [mpm_winnt:notice] [pid 29480:tid 364] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 25 10:50:41.967821 2023] [mpm_winnt:notice] [pid 24792:tid 400] AH00364: Child: All worker threads have exited.
+[Mon Sep 25 10:50:41.999749 2023] [mpm_winnt:notice] [pid 29480:tid 364] AH00430: Parent: Child process 24792 exited successfully.
+[Mon Sep 25 10:51:20.952669 2023] [mpm_winnt:notice] [pid 39652:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Mon Sep 25 10:51:20.956176 2023] [mpm_winnt:notice] [pid 39652:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Mon Sep 25 10:51:20.956176 2023] [core:notice] [pid 39652:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Mon Sep 25 10:51:20.956176 2023] [mpm_winnt:notice] [pid 39652:tid 348] AH00418: Parent: Created child process 21272
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 21272:tid 344] AH00354: Child: Starting 64 worker threads.
+[Mon Sep 25 18:44:42.568578 2023] [mpm_winnt:notice] [pid 39652:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 25 18:44:44.592801 2023] [mpm_winnt:notice] [pid 21272:tid 344] AH00364: Child: All worker threads have exited.
+[Mon Sep 25 18:44:44.656081 2023] [mpm_winnt:notice] [pid 39652:tid 348] AH00430: Parent: Child process 21272 exited successfully.
+[Tue Sep 26 19:26:18.302793 2023] [mpm_winnt:notice] [pid 29184:tid 400] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Tue Sep 26 19:26:18.311692 2023] [mpm_winnt:notice] [pid 29184:tid 400] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Sep 26 19:26:18.311692 2023] [core:notice] [pid 29184:tid 400] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Tue Sep 26 19:26:18.322920 2023] [mpm_winnt:notice] [pid 29184:tid 400] AH00418: Parent: Created child process 44980
+[Tue Sep 26 19:26:18.522674 2023] [mpm_winnt:notice] [pid 44980:tid 348] AH00354: Child: Starting 64 worker threads.
+[Wed Sep 27 19:03:39.415410 2023] [core:warn] [pid 24892:tid 348] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Sep 27 19:03:39.420409 2023] [mpm_winnt:notice] [pid 24892:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Wed Sep 27 19:03:39.420409 2023] [mpm_winnt:notice] [pid 24892:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Wed Sep 27 19:03:39.420409 2023] [core:notice] [pid 24892:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Wed Sep 27 19:03:39.429400 2023] [mpm_winnt:notice] [pid 24892:tid 348] AH00418: Parent: Created child process 10400
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 10400:tid 364] AH00354: Child: Starting 64 worker threads.
+[Wed Sep 27 20:13:35.368968 2023] [mpm_winnt:notice] [pid 24892:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Sep 27 20:13:37.386574 2023] [mpm_winnt:notice] [pid 10400:tid 364] AH00364: Child: All worker threads have exited.
+[Wed Sep 27 20:13:37.433576 2023] [mpm_winnt:notice] [pid 24892:tid 348] AH00430: Parent: Child process 10400 exited successfully.
+[Wed Sep 27 20:13:47.769846 2023] [mpm_winnt:notice] [pid 17584:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Wed Sep 27 20:13:47.771351 2023] [mpm_winnt:notice] [pid 17584:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Wed Sep 27 20:13:47.771351 2023] [core:notice] [pid 17584:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Wed Sep 27 20:13:47.774415 2023] [mpm_winnt:notice] [pid 17584:tid 360] AH00418: Parent: Created child process 6644
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 6644:tid 192] AH00354: Child: Starting 64 worker threads.
+[Thu Sep 28 09:46:41.397168 2023] [mpm_winnt:notice] [pid 17584:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Sep 28 09:46:55.164584 2023] [core:warn] [pid 24696:tid 348] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 28 09:46:55.165939 2023] [mpm_winnt:notice] [pid 24696:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Thu Sep 28 09:46:55.165939 2023] [mpm_winnt:notice] [pid 24696:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Thu Sep 28 09:46:55.165939 2023] [core:notice] [pid 24696:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Thu Sep 28 09:46:55.168450 2023] [mpm_winnt:notice] [pid 24696:tid 348] AH00418: Parent: Created child process 27156
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 27156:tid 344] AH00354: Child: Starting 64 worker threads.
+[Thu Sep 28 09:46:57.334342 2023] [mpm_winnt:notice] [pid 6644:tid 192] AH00364: Child: All worker threads have exited.
+[Thu Sep 28 20:28:59.530157 2023] [mpm_winnt:notice] [pid 24696:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Sep 28 20:29:01.548040 2023] [mpm_winnt:notice] [pid 27156:tid 344] AH00364: Child: All worker threads have exited.
+[Thu Sep 28 20:29:01.575711 2023] [mpm_winnt:notice] [pid 24696:tid 348] AH00430: Parent: Child process 27156 exited successfully.
+[Sun Oct 01 14:31:11.772109 2023] [mpm_winnt:notice] [pid 16180:tid 388] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Oct 01 14:31:11.773109 2023] [mpm_winnt:notice] [pid 16180:tid 388] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Oct 01 14:31:11.773109 2023] [core:notice] [pid 16180:tid 388] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Oct 01 14:31:11.777108 2023] [mpm_winnt:notice] [pid 16180:tid 388] AH00418: Parent: Created child process 2256
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 2256:tid 348] AH00354: Child: Starting 64 worker threads.
+[Sun Oct 01 14:57:57.604943 2023] [cgi:error] [pid 2256:tid 980] [client 179.43.163.130:46652] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Sun Oct 01 16:08:32.081230 2023] [mpm_winnt:notice] [pid 16180:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Oct 01 16:08:34.096512 2023] [mpm_winnt:notice] [pid 2256:tid 348] AH00364: Child: All worker threads have exited.
+[Sun Oct 01 16:08:34.140383 2023] [mpm_winnt:notice] [pid 16180:tid 388] AH00430: Parent: Child process 2256 exited successfully.
+[Sun Oct 01 19:21:12.117526 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Oct 01 19:21:12.118048 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Oct 01 19:21:12.118048 2023] [core:notice] [pid 30656:tid 356] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Oct 01 19:21:12.121072 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00418: Parent: Created child process 24676
+[Sun Oct 01 19:21:12.313128 2023] [mpm_winnt:notice] [pid 24676:tid 408] AH00354: Child: Starting 64 worker threads.
+[Mon Oct 02 00:51:55.729584 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00428: Parent: child process 24676 exited with status 1073807364 -- Restarting.
+[Mon Oct 02 00:51:56.814509 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Mon Oct 02 00:51:56.814509 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Mon Oct 02 00:51:56.814509 2023] [core:notice] [pid 30656:tid 356] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Mon Oct 02 00:51:56.817510 2023] [mpm_winnt:notice] [pid 30656:tid 356] AH00418: Parent: Created child process 31144
+[Mon Oct 02 00:51:56.879560 2023] [mpm_winnt:crit] [pid 30656:tid 356] AH00419: master_main: create child process failed. Exiting.
+[Mon Oct 02 18:52:33.591902 2023] [mpm_winnt:notice] [pid 15296:tid 360] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Mon Oct 02 18:52:33.591902 2023] [mpm_winnt:notice] [pid 15296:tid 360] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Mon Oct 02 18:52:33.591902 2023] [core:notice] [pid 15296:tid 360] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Mon Oct 02 18:52:33.599905 2023] [mpm_winnt:notice] [pid 15296:tid 360] AH00418: Parent: Created child process 9140
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 9140:tid 356] AH00354: Child: Starting 64 worker threads.
+[Mon Oct 02 21:43:23.476341 2023] [mpm_winnt:notice] [pid 15296:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Oct 02 21:43:25.499622 2023] [mpm_winnt:notice] [pid 9140:tid 356] AH00364: Child: All worker threads have exited.
+[Mon Oct 02 21:43:25.535990 2023] [mpm_winnt:notice] [pid 15296:tid 360] AH00430: Parent: Child process 9140 exited successfully.
+[Tue Oct 03 20:33:37.088557 2023] [mpm_winnt:notice] [pid 25300:tid 372] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Tue Oct 03 20:33:37.088557 2023] [mpm_winnt:notice] [pid 25300:tid 372] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Oct 03 20:33:37.088557 2023] [core:notice] [pid 25300:tid 372] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Tue Oct 03 20:33:37.101067 2023] [mpm_winnt:notice] [pid 25300:tid 372] AH00418: Parent: Created child process 14220
+[Tue Oct 03 20:33:37.292744 2023] [mpm_winnt:notice] [pid 14220:tid 408] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 04 19:30:30.836612 2023] [core:warn] [pid 24292:tid 348] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Oct 04 19:30:30.840621 2023] [mpm_winnt:notice] [pid 24292:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Wed Oct 04 19:30:30.840621 2023] [mpm_winnt:notice] [pid 24292:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Wed Oct 04 19:30:30.840621 2023] [core:notice] [pid 24292:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Wed Oct 04 19:30:30.844622 2023] [mpm_winnt:notice] [pid 24292:tid 348] AH00418: Parent: Created child process 10248
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 10248:tid 356] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 04 19:47:09.691595 2023] [mpm_winnt:notice] [pid 24292:tid 348] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Oct 04 19:47:11.699219 2023] [mpm_winnt:notice] [pid 10248:tid 356] AH00364: Child: All worker threads have exited.
+[Wed Oct 04 19:47:11.725698 2023] [mpm_winnt:notice] [pid 24292:tid 348] AH00430: Parent: Child process 10248 exited successfully.
+[Thu Oct 05 08:11:51.537896 2023] [mpm_winnt:notice] [pid 23780:tid 356] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Thu Oct 05 08:11:51.550426 2023] [mpm_winnt:notice] [pid 23780:tid 356] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Thu Oct 05 08:11:51.550426 2023] [core:notice] [pid 23780:tid 356] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Thu Oct 05 08:11:51.553430 2023] [mpm_winnt:notice] [pid 23780:tid 356] AH00418: Parent: Created child process 26368
+[Thu Oct 05 08:11:51.738454 2023] [mpm_winnt:notice] [pid 26368:tid 400] AH00354: Child: Starting 64 worker threads.
+[Thu Oct 05 08:29:57.522154 2023] [cgi:error] [pid 26368:tid 964] [client 179.43.163.130:41520] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Thu Oct 05 08:32:19.688457 2023] [cgi:error] [pid 26368:tid 964] [client 179.43.163.130:34680] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Thu Oct 05 13:11:37.838817 2023] [cgi:error] [pid 26368:tid 964] [client 179.43.163.130:51838] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Thu Oct 05 14:22:40.286607 2023] [cgi:error] [pid 26368:tid 964] [client 179.43.163.130:53034] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Fri Oct 06 08:07:11.470390 2023] [core:warn] [pid 11056:tid 352] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Oct 06 08:07:11.474598 2023] [mpm_winnt:notice] [pid 11056:tid 352] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Fri Oct 06 08:07:11.474598 2023] [mpm_winnt:notice] [pid 11056:tid 352] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Fri Oct 06 08:07:11.474598 2023] [core:notice] [pid 11056:tid 352] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Fri Oct 06 08:07:11.477598 2023] [mpm_winnt:notice] [pid 11056:tid 352] AH00418: Parent: Created child process 11216
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 11216:tid 348] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 06 19:59:27.188989 2023] [mpm_winnt:notice] [pid 11056:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 06 19:59:29.205165 2023] [mpm_winnt:notice] [pid 11216:tid 348] AH00364: Child: All worker threads have exited.
+[Fri Oct 06 19:59:29.245624 2023] [mpm_winnt:notice] [pid 11056:tid 352] AH00430: Parent: Child process 11216 exited successfully.
+[Mon Oct 09 08:22:18.298653 2023] [mpm_winnt:notice] [pid 14120:tid 348] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Mon Oct 09 08:22:18.298653 2023] [mpm_winnt:notice] [pid 14120:tid 348] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Mon Oct 09 08:22:18.298653 2023] [core:notice] [pid 14120:tid 348] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Mon Oct 09 08:22:18.306863 2023] [mpm_winnt:notice] [pid 14120:tid 348] AH00418: Parent: Created child process 13232
+[Mon Oct 09 08:22:18.586557 2023] [mpm_winnt:notice] [pid 13232:tid 356] AH00354: Child: Starting 64 worker threads.
+[Mon Oct 09 17:39:14.154381 2023] [cgi:error] [pid 13232:tid 988] [client 179.43.163.130:51992] AH02811: script not found or unable to stat: C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/cgi-bin/adm.cgi, referer: http://45.183.248.101/adm/management.shtml
+[Tue Oct 10 12:11:29.654569 2023] [core:warn] [pid 23900:tid 380] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Oct 10 12:11:29.656844 2023] [mpm_winnt:notice] [pid 23900:tid 380] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Tue Oct 10 12:11:29.656844 2023] [mpm_winnt:notice] [pid 23900:tid 380] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Oct 10 12:11:29.656844 2023] [core:notice] [pid 23900:tid 380] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Tue Oct 10 12:11:29.685192 2023] [mpm_winnt:notice] [pid 23900:tid 380] AH00418: Parent: Created child process 24332
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 24332:tid 360] AH00354: Child: Starting 64 worker threads.
+[Tue Oct 10 12:37:30.545213 2023] [mpm_winnt:notice] [pid 23900:tid 380] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Oct 10 12:37:32.552808 2023] [mpm_winnt:notice] [pid 24332:tid 360] AH00364: Child: All worker threads have exited.
+[Tue Oct 10 12:37:32.588488 2023] [mpm_winnt:notice] [pid 23900:tid 380] AH00430: Parent: Child process 24332 exited successfully.
+[Tue Oct 10 12:55:51.543316 2023] [mpm_winnt:notice] [pid 24468:tid 352] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Tue Oct 10 12:55:51.544320 2023] [mpm_winnt:notice] [pid 24468:tid 352] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Oct 10 12:55:51.544320 2023] [core:notice] [pid 24468:tid 352] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Tue Oct 10 12:55:51.569862 2023] [mpm_winnt:notice] [pid 24468:tid 352] AH00418: Parent: Created child process 5420
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 5420:tid 348] AH00354: Child: Starting 64 worker threads.
+[Tue Oct 10 13:19:08.611117 2023] [mpm_winnt:notice] [pid 24468:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Oct 10 13:19:10.633521 2023] [mpm_winnt:notice] [pid 5420:tid 348] AH00364: Child: All worker threads have exited.
+[Tue Oct 10 13:19:10.675320 2023] [mpm_winnt:notice] [pid 24468:tid 352] AH00430: Parent: Child process 5420 exited successfully.
+[Tue Oct 10 13:19:15.715520 2023] [mpm_winnt:notice] [pid 21784:tid 556] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Tue Oct 10 13:19:15.715520 2023] [mpm_winnt:notice] [pid 21784:tid 556] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Oct 10 13:19:15.715520 2023] [core:notice] [pid 21784:tid 556] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Tue Oct 10 13:19:15.720052 2023] [mpm_winnt:notice] [pid 21784:tid 556] AH00418: Parent: Created child process 18556
+[Tue Oct 10 13:19:15.951859 2023] [mpm_winnt:notice] [pid 18556:tid 544] AH00354: Child: Starting 64 worker threads.
+[Sun Oct 15 22:27:10.413727 2023] [core:warn] [pid 32808:tid 364] AH00098: pid file C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Oct 15 22:27:10.422193 2023] [mpm_winnt:notice] [pid 32808:tid 364] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Sun Oct 15 22:27:10.422193 2023] [mpm_winnt:notice] [pid 32808:tid 364] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Sun Oct 15 22:27:10.422193 2023] [core:notice] [pid 32808:tid 364] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Sun Oct 15 22:27:10.430220 2023] [mpm_winnt:notice] [pid 32808:tid 364] AH00418: Parent: Created child process 32408
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 32408:tid 180] AH00354: Child: Starting 64 worker threads.
+[Sun Oct 15 23:25:22.814757 2023] [mpm_winnt:notice] [pid 32808:tid 364] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Oct 15 23:25:24.894101 2023] [mpm_winnt:notice] [pid 32408:tid 180] AH00364: Child: All worker threads have exited.
+[Sun Oct 15 23:25:25.047126 2023] [mpm_winnt:notice] [pid 32808:tid 364] AH00430: Parent: Child process 32408 exited successfully.
+[Fri Nov 10 20:27:24.854454 2023] [mpm_winnt:notice] [pid 36064:tid 352] AH00455: Apache/2.4.57 (Win64) configured -- resuming normal operations
+[Fri Nov 10 20:27:24.855470 2023] [mpm_winnt:notice] [pid 36064:tid 352] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Fri Nov 10 20:27:24.855470 2023] [core:notice] [pid 36064:tid 352] AH00094: Command line: 'C:\\Users\\joheb\\OneDrive\\Documentos\\GitHub\\Financas\\Financa\\Apache24\\bin\\httpd.exe -d C:/Users/joheb/OneDrive/Documentos/GitHub/Financas/Financa/Apache24'
+[Fri Nov 10 20:27:24.860539 2023] [mpm_winnt:notice] [pid 36064:tid 352] AH00418: Parent: Created child process 17224
+[Fri Nov 10 20:27:25.084255 2023] [mpm_winnt:notice] [pid 17224:tid 364] AH00354: Child: Starting 64 worker threads.
